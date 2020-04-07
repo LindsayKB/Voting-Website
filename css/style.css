@@ -1,0 +1,145 @@
+html, body {
+	overflow-x:hidden;
+}
+.container-fluid {
+	padding:0px;
+}
+.navbar {
+	background-color: #e3f2fd;
+}
+.alert {
+	text-align:center;
+}
+.page-title {
+  background-color: #473198;
+  padding:20px 0px;
+  color:#ffffff;
+  text-align:center;
+}
+.poll {
+  border-radius:2px;
+  border:1px solid #333333;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding:10px 0px;
+  width:100%;
+  max-width:600px;
+}	
+.poll-row {
+	margin:20px 0px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+form {
+	display:block;
+	margin:0 auto;
+	width:100%;
+	max-width:600px;
+}
+label {
+	font-size:25px;
+	width:100%;
+	max-width:600px;
+	color:#000000;
+	margin:0px;
+	padding:10px 15px;
+}
+label.poll-option {
+	border-bottom:2px solid #000000;
+}
+input {
+	margin-right:10px;
+}
+   input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid black;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: black;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+	form .btn {
+		font-size: 23px;
+		display: block;
+    margin: 0 auto;
+	}
+	.poll-results svg {
+		display:block;
+		margin:0 auto;
+	}
+	.poll-results {
+		height:fit-content;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		margin-top:30px;
+	}
+ .bar{
+    fill: steelblue;
+  }
+
+  .bar:hover{
+    fill: purple;
+  }
+
+	.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+	.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
